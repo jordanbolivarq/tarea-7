@@ -17,13 +17,12 @@ namespace ConsoleApp7
                 string continuar = "";
                 int vidas = 3;
                 int turnosVidas = 2;
-                int contador = 0;
-                int contador2 = 0;
-                //int contador3 = 0;
+                int contador = 1;
+                int contador2 = 1;
 
-                Console.WriteLine("Supere 100 para ganar para ganar.");
-                Console.WriteLine("Ustede tiene " + vidas + " vidas, perdera 1 cada " + turnosVidas + " turnos. Si se queda sin vidas pierde" );
-                Console.WriteLine("Cada 3 turnos podra lanzar 2 dados, si obtine par (ambos dados con igual valor) obtendra otra vida");
+                Console.WriteLine("obtenga 100 o mas para ganar.");
+                Console.WriteLine("Ustede tiene " + vidas + " vidas, perdera 1 cada " + turnosVidas + " turnos. Si se queda sin vidas pierde." );
+                Console.WriteLine("Cada 3 turnos podra lanzar 2 dados, si obtine par (ambos dados con igual valor) obtendra otra vida.");
 
                 Console.WriteLine("dado: " + dado1);
                 Console.WriteLine("Total: " + total);
