@@ -15,7 +15,7 @@ namespace ConsoleApp8
 
                 string continuar = "";
                 int contador = 0;
-                 int contador2 = 1;
+                 int contador2 = 0;
 
                 Console.WriteLine("obtenga 100 o mas para ganar.");
                 Console.WriteLine("Ustede tiene 3 tiros libres, perdera si una vez pasados los 3 turnos saca un numero impar.");
