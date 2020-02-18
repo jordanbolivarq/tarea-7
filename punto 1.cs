@@ -15,11 +15,11 @@ namespace ConsoleApp8
 
                 string continuar = "";
                 int contador = 0;
-                 int contador2 = 0;
+                int anterior = 0;
 
-                Console.WriteLine("obtenga 100 o mas para ganar.");
+                Console.WriteLine("Obtenga 100 o mas para ganar.");
                 Console.WriteLine("Ustede tiene 3 tiros libres, perdera si una vez pasados los 3 turnos saca un numero impar.");
-                Console.WriteLine("si obtine un 12 seguido de un 10 ganara automaticamente.");
+                Console.WriteLine("Si obtine un 12 seguido de un 10 ganara automaticamente.");
 
                 Console.WriteLine("dado: " + dado1);
                 Console.WriteLine("Total: " + total);
@@ -29,22 +29,14 @@ namespace ConsoleApp8
 
                 while (continuar == "s" && total < 100)
                 {
+                    anterior = dado1;
                     dado1 = aleatorio.Next(1, 13);
                     Console.WriteLine("dado: " + dado1);
                     contador++;
                     total += dado1;
                     Console.WriteLine("Total: " + total);
 
-                    if (contador2 == 0 && dado1 == 12)
-                        contador2++;
-
-                    if (contador2 == 1 && dado1 == 10)
-                        contador2++;
-
-                    if (contador2 == 1 && dado1 != 10)
-                        contador2 = 0;
-
-                    if (contador2 == 2)
+                    if (anterior == 12 && dado1 == 10)
                         total = 100;
 
                     if (total >= 100)
